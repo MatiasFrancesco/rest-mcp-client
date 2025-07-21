@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCPClient", "MCPClient\MCPClient.csproj", "{448CB5AD-813C-4EEA-944C-6F0C9A3CA429}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99 Presentation", "99 Presentation", "{6818BC5C-546F-4075-B697-C5D0643A1E88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "50 Modules", "50 Modules", "{7227BBE6-4A2E-4A9D-9D37-223CC4CB45DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Weather", "Weather", "{712FACE7-0B10-4DED-9DEF-4039BD883CC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCPClient.Moduels.Weather", "MCPClient.Moduels.Weather\MCPClient.Moduels.Weather.csproj", "{8934BF71-A58B-4A10-B5AF-01544FA6A556}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCPClient.Module.Weather.Shared", "MCPClient.Module.Weather.Shared\MCPClient.Module.Weather.Shared.csproj", "{0ED4430F-C10E-4B44-923E-648B6CA703C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{448CB5AD-813C-4EEA-944C-6F0C9A3CA429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{448CB5AD-813C-4EEA-944C-6F0C9A3CA429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{448CB5AD-813C-4EEA-944C-6F0C9A3CA429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{448CB5AD-813C-4EEA-944C-6F0C9A3CA429}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8934BF71-A58B-4A10-B5AF-01544FA6A556}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8934BF71-A58B-4A10-B5AF-01544FA6A556}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8934BF71-A58B-4A10-B5AF-01544FA6A556}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8934BF71-A58B-4A10-B5AF-01544FA6A556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ED4430F-C10E-4B44-923E-648B6CA703C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ED4430F-C10E-4B44-923E-648B6CA703C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ED4430F-C10E-4B44-923E-648B6CA703C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ED4430F-C10E-4B44-923E-648B6CA703C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{448CB5AD-813C-4EEA-944C-6F0C9A3CA429} = {6818BC5C-546F-4075-B697-C5D0643A1E88}
+		{712FACE7-0B10-4DED-9DEF-4039BD883CC7} = {7227BBE6-4A2E-4A9D-9D37-223CC4CB45DA}
+		{8934BF71-A58B-4A10-B5AF-01544FA6A556} = {712FACE7-0B10-4DED-9DEF-4039BD883CC7}
+		{0ED4430F-C10E-4B44-923E-648B6CA703C5} = {712FACE7-0B10-4DED-9DEF-4039BD883CC7}
+	EndGlobalSection
+EndGlobal
