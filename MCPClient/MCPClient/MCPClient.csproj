@@ -12,11 +12,6 @@
         <PackageReference Include="ModelContextProtocol" Version="0.3.0-preview.3" />
         <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="9.0.3" />
         <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="9.0.3" />
+        <ProjectReference Include="..\MCPClient.Chat.Facade\MCPClient.Chat.Facade.csproj" />
     </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\Chat\Chat.csproj" />
-      <ProjectReference Include="..\MCPClient.Moduels.Weather\MCPClient.Moduels.Weather.csproj" />
-    </ItemGroup>
-
 </Project>

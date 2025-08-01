@@ -1,20 +1,19 @@
-using Chat;
+using MCPClient.Chat.Facade;
+using MCPClient.Chat.Facade.endpoints;
 
 namespace MCPClient.Modules;
 
 public class ChatModule : IModule
 {
-    public IServiceCollection RegisterModule(IServiceCollection services)
+    public IServiceCollection RegisterModule(WebApplicationBuilder builder)
     {
-        services.AddChatModule();
-        return services;
+        builder.Services.RegisterChat(builder.Configuration);
+        return builder.Services;
     }
-    
-    public IEndpointRouteBuilder MapEndpoints(IEndpointRouteBuilder endpoints)
+
+    public WebApplication MapEndpoints(WebApplication endpoints)
     {
-        endpoints.MapGet("/chat/test", async (IChatService chatService) => await chatService.TestConnection())
-            .WithName("TestChatConnection")
-            .WithTags("Chat");
+        endpoints.MapChatEndpoints();
         return endpoints;
     }
 }

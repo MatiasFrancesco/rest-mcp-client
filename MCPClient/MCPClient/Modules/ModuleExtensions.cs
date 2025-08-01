@@ -9,7 +9,7 @@ public static class ModuleExtensions
         var modules = DiscoverModules();
         foreach (var module in modules)
         {
-            module.RegisterModule(builder.Services);
+            module.RegisterModule(builder);
             RegisteredModules.Add(module);
         }
 
