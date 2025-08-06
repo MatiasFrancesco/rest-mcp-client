@@ -23,6 +23,10 @@ public static class ChatEndpoints
             .Produces<string>(StatusCodes.Status200OK)
             .Produces(StatusCodes.Status500InternalServerError);
 
+        group.MapPost("/tools/response", HandleChatMessage)
+            .Produces<string>(StatusCodes.Status200OK)
+            .Produces(StatusCodes.Status500InternalServerError);
+
 
         return group;
     }
@@ -45,6 +49,28 @@ public static class ChatEndpoints
             }
 
             return Results.Ok(message);
+        }
+        catch (Exception ex)
+        {
+            return Results.Problem(ex.Message, statusCode: StatusCodes.Status500InternalServerError);
+        }
+    }
+
+    private static async Task<IResult> HandleChatMessage(
+        string prompt,
+        IChatService chatService,
+        IAbstractMcpServer abstractMcpServer)
+    {
+        try
+        {
+            if (string.IsNullOrWhiteSpace(prompt))
+            {
+                return Results.BadRequest("Prompt cannot be empty.");
+            }
+
+            IList<McpClientTool> tools = await abstractMcpServer.GetToolsAsync();
+            var response = await chatService.GetResponseWithToolsAsync(prompt, tools);
+            return Results.Ok(response);
         }
         catch (Exception ex)
         {
