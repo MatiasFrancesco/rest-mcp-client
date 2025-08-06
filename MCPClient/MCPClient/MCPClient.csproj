@@ -4,16 +4,14 @@
         <TargetFramework>net9.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>87e2fb09-12a2-4571-85ed-b1b2b8184f0c</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.7"/>
+        <PackageReference Include="ModelContextProtocol" Version="0.3.0-preview.3" />
         <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="9.0.3" />
         <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="9.0.3" />
+        <ProjectReference Include="..\MCPClient.Chat.Facade\MCPClient.Chat.Facade.csproj" />
     </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\MCPClient.Moduels.Weather\MCPClient.Moduels.Weather.csproj" />
-    </ItemGroup>
-
 </Project>

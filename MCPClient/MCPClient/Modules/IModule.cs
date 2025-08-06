@@ -2,6 +2,6 @@ namespace MCPClient.Modules;
 
 public interface IModule
 {
-    IServiceCollection RegisterModule(IServiceCollection services);
-    IEndpointRouteBuilder MapEndpoints(IEndpointRouteBuilder endpoints);
+    IServiceCollection RegisterModule(WebApplicationBuilder builder);
+    WebApplication MapEndpoints(WebApplication endpoints);
 }

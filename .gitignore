@@ -1,2 +1,126 @@
-**/obj/
+# Build results
 **/bin/
+**/obj/
+
+# Rider project files
+.idea/
+*.sln.iml
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build logs
+*.log
+
+# NuGet packages
+*.nupkg
+# NuGet restore
+*.nuget
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Auto-generated files
+Generated_Code/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# User-specific files
+*.swp
+*.bak
+*.tmp
+*.orig
+
+# Dotnet publish
+publish/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Others
+*.pidb
+*.svd
+*.pdb
+*.mdb
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# Rider logs
+.idea/
+.idea_modules/
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+
+# Local history
+.localhistory/
+
+# npm
+node_modules/
+
+# Environment files
+.env
+.env.*
+
+# Backup files
+*.bak
+
+# Package management
+packages/
+
+# Temporary files
+~$*
+
+# Others
+*.dbmdl
+*.dbproj
+*.jfm
+*.psess
+*.vsp
+*.vspscc
+*.vssscc
+*.cache
+*.diff
+*.orig
+*.rej
+*.sdf
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vspscc
+*.vssscc
+*.tmp
+*.log
+*.vsix
+*.docstates
+
+# Windows image file caches
+Thumbs.db
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# Rider
+.idea/
+*.sln.iml
+
+# End of file
